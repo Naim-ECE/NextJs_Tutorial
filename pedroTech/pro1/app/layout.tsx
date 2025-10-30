@@ -28,9 +28,32 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Link href="./">Home</Link>
-        <Link href={"./about"}>About</Link>
-        <Link href="./contact">Contact</Link>
+        <div className="mt-4">
+          <Link
+            className="bg-green-500 p-2 m-2 rounded-md hover:bg-green-600 active:bg-green-700"
+            href="./"
+          >
+            Home
+          </Link>
+          <Link
+            className="bg-green-500 p-2 m-2 rounded-md hover:bg-green-600 active:bg-green-700"
+            href={"./about"}
+          >
+            About
+          </Link>
+          <Link
+            className="bg-green-500 p-2 m-2 rounded-md hover:bg-green-600 active:bg-green-700"
+            href="./contact"
+          >
+            Contact
+          </Link>
+          <Link
+            className="bg-green-500 p-2 m-2 rounded-md hover:bg-green-600 active:bg-green-700"
+            href="./users"
+          >
+            Users
+          </Link>
+        </div>
         {children}
       </body>
     </html>
